@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  user-select: none;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Generous spacing matching your design */
+  width: 100%;
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 50px; /* Aligns comfortably with text blocks */
+}
+
+.label {
+  width: 180px; /* Ensures labels fit beautifully without squishing */
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #2D3748;
+  padding-right: 20px;
+  text-align: right; /* Aligns neatly right next to the starting bars */
+  line-height: 1.2;
+}
+
+.bar-wrapper {
+  flex-grow: 1;
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  background-color: #41BDA5; /* Your exact color code */
+  height: 100%;
+  border-radius: 1px;
+  transition: width 0.3s ease, opacity 0.15s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.row-container:hover .bar {
+  filter: brightness(0.95);
+}
+
+/* Replicating the Native Looker Studio Tooltip Box */
+.custom-tooltip {
+  visibility: hidden;
+  position: absolute;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 12px 14px;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+  z-index: 9999;
+  width: 280px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #E2E8F0;
+  pointer-events: none;
+  left: 200px;
+  top: -20px;
+}
+
+.row-container:hover .custom-tooltip {
+  visibility: visible;
+}
+
+.tooltip-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.tooltip-metric {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  border-top: 1px solid #EDF2F7;
+  padding-top: 6px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Custom Hover Bar Chart",
+  "organization": "My Organization",
+  "description": "Bar chart with locked rows, Raleway font, custom hovers, and cross-filtering.",
+  "logoUrl": "https://www.gstatic.com/analytics-components/images/analytics-logo.svg",
+  "packageUrl": "https://example.com",
+  "organizationUrl": "https://example.com",
+  "devMode": true,
+  "components": [
+    {
+      "id": "customBarChart",
+      "name": "Custom Hover Bar Chart",
+      "description": "Locks issue areas, sets Raleway font, and shows custom hover descriptions.",
+      "iconUrl": "https://www.gstatic.com/analytics-components/images/analytics-logo.svg",
+      "resource": {
+        "js": "https://pce-egehringer.github.io/looker-chart/index.js",
+        "config": "https://pce-egehringer.github.io/looker-chart/index.json",
+        "css": "https://pce-egehringer.github.io/looker-chart/index.css"
+      }
+    }
+  ]
+}
