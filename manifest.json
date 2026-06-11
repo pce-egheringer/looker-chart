@@ -13,9 +13,9 @@
       "description": "Locks issue areas, sets Raleway font, and shows custom hover descriptions.",
       "iconUrl": "https://www.gstatic.com/analytics-components/images/analytics-logo.svg",
       "resource": {
-        "js": "https://pce-egehringer.github.io/looker-chart/index.js",
-        "config": "https://pce-egehringer.github.io/looker-chart/index.json",
-        "css": "https://pce-egehringer.github.io/looker-chart/index.css"
+        "js": "index.js",
+        "config": "index.json",
+        "css": "index.css"
       }
     }
   ]
